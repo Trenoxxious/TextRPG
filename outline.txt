@@ -1,0 +1,8 @@
+First, we're going to create the login page for the game. It will be a simple login page, featuring a character creation button.
+
+When creating a character, we'll only give the option of creating a username and pressing a 'Create Character' button.
+
+The login system should be able to handle up to 3 or 5 characters and no more. When loading the login screen, we will give a list of characters and allow the
+user to select one. If the user is not logged in, this page should load normally. If the user is logged in, this page should redirect to the game page instead. A
+logout button will be made on the game screen to log the user out. If the browser already has a maximum amount of accounts found, the 'Create Character' button
+should not show.
