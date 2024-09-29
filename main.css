@@ -1,0 +1,14 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkslateblue;
+  color: blueviolet;
+}
+.body {
+  background-color: darkslategray;
+}
