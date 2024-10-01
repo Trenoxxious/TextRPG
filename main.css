@@ -7,7 +7,9 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(32, 32, 60);
+  color: rgb(43, 56, 56);
 }
 body {
-  background-color: darkslateblue;
+  background-color: rgb(32, 32, 60);
 }
