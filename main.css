@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   margin: 0%;
   padding: 0%;
@@ -5,11 +7,91 @@
 
 nav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to bottom, rgb(96, 96, 145), rgb(97, 97, 185));
+  padding: 30px;
+  color: rgb(100, 255, 255);
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  background: linear-gradient(to bottom, rgb(32, 32, 60) 60%, rgb(69, 69, 78));
+  min-height: 100vh;
+}
+
+nav h1 {
+  display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(32, 32, 60);
-  color: rgb(43, 56, 56);
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 5px;
+  word-spacing: 7px;
 }
-body {
-  background-color: rgb(32, 32, 60);
+
+.noto-sans-normal {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.button-div {
+  display: flex;
+  gap: 10px;
+}
+
+.bubble-button {
+  user-select: none;
+  padding: 10px;
+  border-radius: 0.5em;
+  font-weight: bold;
+  font-size: 16px;
+  border: 0;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.33);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.bubble-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.33);
+}
+
+.bubble-button:active {
+  transition: all 0.1s cubic-bezier(0.19, 1, 0.22, 1);
+  transform: translateY(0px);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.33);
+}
+
+.red-design {
+  color: rgb(255, 249, 249);
+  background-color: rgb(255, 108, 108);
+  border-bottom: 4px solid red;
+  border-top: 1px solid rgb(255, 165, 165);
+  border-left: 1px solid rgb(255, 165, 165);
+  border-right: 1px solid red;
+  text-shadow: 0 2px 0 red;
+}
+
+.green-design {
+  color: rgb(255, 255, 255);
+  background-color: rgb(93, 180, 90);
+  border-bottom: 4px solid rgb(0, 161, 8);
+  border-top: 1px solid rgb(172, 255, 165);
+  border-left: 1px solid rgb(168, 255, 165);
+  border-right: 1px solid rgb(0, 161, 8);
+  text-shadow: 0 2px 0 rgb(0, 161, 8);
+}
+
+.purple-design {
+  color: rgb(255, 255, 255);
+  background-color: rgb(140, 90, 180);
+  border-bottom: 4px solid rgb(115, 0, 161);
+  border-top: 1px solid rgb(252, 165, 255);
+  border-left: 1px solid rgb(237, 165, 255);
+  border-right: 1px solid rgb(115, 0, 161);
+  text-shadow: 0 2px 0 rgb(115, 0, 161);
 }
