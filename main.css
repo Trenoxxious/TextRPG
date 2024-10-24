@@ -1,22 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 
 * {
   margin: 0%;
   padding: 0%;
 }
-
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to bottom, rgb(96, 96, 145), rgb(97, 97, 185));
+  background: linear-gradient(to bottom, rgb(32, 14, 32), rgb(32, 19, 32));
   padding: 30px;
-  color: rgb(100, 255, 255);
+  color: rgb(173, 90, 173);
 }
 
 body {
-  font-family: "Noto Sans", sans-serif;
-  background: linear-gradient(to bottom, rgb(32, 32, 60) 60%, rgb(69, 69, 78));
+  font-family: "Orbitron", sans-serif;
+  background: linear-gradient(to bottom, rgb(17, 9, 17), rgb(48, 48, 56));
   min-height: 100vh;
 }
 
@@ -30,8 +31,34 @@ nav h1 {
   word-spacing: 7px;
 }
 
-.noto-sans-normal {
-  font-family: "Noto Sans", sans-serif;
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 300px;
+  width: 100%;
+}
+
+.intro p {
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  color: rgb(102, 236, 241);
+}
+
+.intro h2 {
+  font-family: "Orbitron", serif;
+  font-size: 48px;
+  color: white;
+  margin-left: 30px;
+  pointer-events: none;
+  z-index: 1;
+  text-shadow: 0 3px 0 black;
+  margin-bottom: 15px;
+}
+
+.orbitron {
+  font-family: "orbitron", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
@@ -50,9 +77,9 @@ nav h1 {
   font-weight: bold;
   font-size: 16px;
   border: 0;
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.33);
+  box-sizing: 0 2px 0 rgba(0, 0, 0, 0.33);
   cursor: pointer;
-  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.3 cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .bubble-button:hover {
@@ -63,44 +90,25 @@ nav h1 {
 .bubble-button:active {
   transition: all 0.1s cubic-bezier(0.19, 1, 0.22, 1);
   transform: translateY(0px);
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.33);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.033);
 }
 
-.red-design {
-  color: rgb(255, 249, 249);
-  background-color: rgb(255, 108, 108);
-  border-bottom: 4px solid red;
-  border-top: 1px solid rgb(255, 165, 165);
-  border-left: 1px solid rgb(255, 165, 165);
-  border-right: 1px solid red;
-  text-shadow: 0 2px 0 red;
+.pink-design {
+  color: rgb(225, 255, 255);
+  background-color: rgb(230, 62, 163);
+  border-bottom: 4px solid rgb(212, 21, 145);
+  border-top: 1px solid rgb(233, 128, 194);
+  border-left: 1px solid rgb(233, 128, 194);
+  border-right: 1px solid rgb(212, 21, 145);
+  text-shadow: 0 2px 0 rgb(212, 21, 145);
 }
 
-.green-design {
-  color: rgb(255, 255, 255);
-  background-color: rgb(93, 180, 90);
-  border-bottom: 4px solid rgb(0, 161, 8);
-  border-top: 1px solid rgb(172, 255, 165);
-  border-left: 1px solid rgb(168, 255, 165);
-  border-right: 1px solid rgb(0, 161, 8);
-  text-shadow: 0 2px 0 rgb(0, 161, 8);
-}
-
-.purple-design {
-  color: rgb(255, 255, 255);
-  background-color: rgb(140, 90, 180);
-  border-bottom: 4px solid rgb(115, 0, 161);
-  border-top: 1px solid rgb(252, 165, 255);
-  border-left: 1px solid rgb(237, 165, 255);
-  border-right: 1px solid rgb(115, 0, 161);
-  text-shadow: 0 2px 0 rgb(115, 0, 161);
-}
 .blue-design {
-  color: rgb(226, 226, 240);
-  background-color: rgb(17, 6, 139);
-  border-bottom: 4px solid rgb(17, 6, 139);
-  border-top: 1px solid lightskyblue;
-  border-left: 1px solid lightskyblue;
-  border-right: 1px solid rgb(42, 106, 166);
-  text-shadow: 0 2px 0 rgb(24, 10, 179);
+  color: rgb(246, 252, 255);
+  background-color: rgb(17, 6, 170);
+  border-bottom: 4px solid rgb(11, 4, 116);
+  border-top: 1px solid rgb(24, 105, 195);
+  border-left: 1px solid rgb(24, 105, 198);
+  border-right: 1px solid rgb(6, 3, 139);
+  text-shadow: 0 2px 0 rgb(6, 3, 139);
 }
